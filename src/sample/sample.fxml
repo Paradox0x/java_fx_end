@@ -10,6 +10,7 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
       <RowConstraints minHeight="10.0" prefHeight="300.0" />
    </rowConstraints>
    <columnConstraints>
@@ -31,12 +32,13 @@
          <font>
             <Font size="14.0" />
          </font></Button>
-      <TableView fx:id="usersView" prefHeight="91.0" prefWidth="210.0" GridPane.columnSpan="2" GridPane.rowIndex="3">
+      <TableView fx:id="usersView" prefHeight="91.0" prefWidth="210.0" GridPane.columnSpan="2" GridPane.rowIndex="4">
         <columns>
           <TableColumn fx:id="columnName" minWidth="0.0" prefWidth="120.0" text="Name" />
           <TableColumn fx:id="columnEmail" prefWidth="119.0" text="Email" />
         </columns>
       </TableView>
+      <Button fx:id="usunBtn" mnemonicParsing="false" onAction="#deleteUser" prefHeight="25.0" prefWidth="249.0" text="usun" GridPane.columnSpan="2" GridPane.rowIndex="3" />
    </children>
    <padding>
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

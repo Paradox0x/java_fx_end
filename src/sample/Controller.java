@@ -43,4 +43,10 @@ public class Controller {
         users.add(user);
         System.out.println("USER ADDED");
     }
+
+    public void deleteUser(ActionEvent actionEvent) {
+        User userToDelete = usersView.getSelectionModel().getSelectedItem();
+        users.remove(userToDelete);
+
+    }
 }
